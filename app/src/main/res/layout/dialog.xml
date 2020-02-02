@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="400dp"
+              android:layout_height="300dp" android:gravity="center" android:id="@+id/ll_dialog"
+              android:visibility="gone">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="@string/dialog_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" android:background="#F30691A3"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" android:gravity="center">
+        <TextView
+                android:text="@string/dialog_time_label"
+                android:layout_width="100dp"
+                android:layout_height="50dp" android:id="@+id/dialog_time_label" android:gravity="center_vertical"
+                android:textSize="18sp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/editText" android:layout_weight="1"
+                android:autofillHints="@string/dialog_placeholder" android:minWidth="300dp"
+                android:labelFor="@id/dialog_time_label" android:layout_marginEnd="10dp"
+                android:hint="@string/dialog_placeholder"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Button
+                android:text="@string/dialog_confirm"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" android:id="@+id/confirm_btn" android:background="#097CAF"/>
+        <Button
+                android:text="@string/dialog_cancel"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" android:id="@+id/cancel_btn" android:background="#D2E3EB"/>
+    </LinearLayout>
+</LinearLayout>

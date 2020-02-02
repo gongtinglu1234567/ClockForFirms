@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:id="@+id/ll_item" android:paddingTop="3dip"
+              android:paddingLeft="1dip" android:paddingRight="1dip">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tv_id" android:paddingLeft="1dip"
+            android:paddingRight="1dip" android:paddingTop="8dip" android:paddingBottom="8dip"
+            android:layout_marginRight="10dip" android:layout_marginLeft="10dip"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tv_time" android:layout_weight="1"
+            android:paddingLeft="1dip" android:paddingRight="1dip" android:paddingTop="8dip" android:paddingEnd="8dip"
+            android:layout_marginRight="10dip" android:layout_marginLeft="10dip"/>
+    <ImageView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_media_play"
+            android:id="@+id/start_btn" android:layout_weight="1"
+            android:paddingTop="8dip" android:contentDescription="@string/start_btn" android:paddingBottom="8dip"
+            android:background="#9E2EDD35"/>
+    <ImageView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_media_pause"
+            android:id="@+id/pause_btn" android:layout_weight="1"
+            android:paddingTop="8dip" android:visibility="visible" android:contentDescription="@string/pause_btn"
+            tools:visibility="visible" android:background="#B94040" android:clickable="true"
+            android:paddingBottom="8dip"/>
+    <ImageView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_edit"
+            android:id="@+id/edit_btn" android:layout_weight="1" android:contentDescription="@string/edit_btn"
+            android:paddingTop="8dip" android:paddingBottom="8dip"/>
+</LinearLayout>
